@@ -272,7 +272,7 @@ section{
     margin-top: 50px;
     padding-bottom: 0; 
     max-width: 1200px;
-    width: 60%;
+    width: 57%;
     height: 20%;
     gap: 1rem;
 }
@@ -319,6 +319,7 @@ section{
     align-items: center;
     position: relative;
     margin:2px;
+    margin-bottom: 100px;
 }
 
 .about-containers{
@@ -369,6 +370,102 @@ section{
     text-align: center;
 }
 
+#brain_tumor {
+    padding: 2rem;
+    background-color: #f0f0f0; /* Adjust this to match your website's background */
+    height: 100%;
+    width: 70%;
+    margin-left: 240px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333; /* Adjust this to match your website's text color */
+}
+
+h3, h4 {
+    color: #333;
+    margin-top: 1rem;
+}
+
+.try-now-btn {
+    background-color: #ffffff;
+    color: #333;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.try-now-btn:hover {
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.arrow {
+    margin-left: 0.5rem;
+}
+
+.brain-tumor-content {
+    display: flex;
+    gap: 2rem;
+}
+
+.brain-tumor-main {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.brain-tumor-info {
+    flex: 1;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.brain-tumor-text {
+    margin-bottom: 1rem;
+}
+
+.brain_tumor_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brain_tumor_image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+ol {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .brain-tumor-content {
+        flex-direction: column;
+    }
+}
 
 #contact{
     display: flex;
