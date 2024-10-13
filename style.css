@@ -233,12 +233,13 @@ section{
 }
 
 .btn-color-1, .btn-color-2:hover{
-    background: rgb(53,53,53);
+    background: rgb(0, 0, 0);
     color:white;
 }
 
 .btn-color-1:hover{
-    background: rgb(0,0,0);
+    background: rgb(255, 255, 255);
+    color: #000000;
 }
 
 .btn-color-2{
@@ -281,7 +282,7 @@ section{
     flex: 1 1 40%; /* Flex-grow, flex-shrink, flex-basis */
     max-width: 500px; 
     margin-right: 20px; 
-    margin-bottom: 0;
+    margin-top: 35px;   
 }
 
 #video-homepage {
@@ -319,7 +320,7 @@ section{
     align-items: center;
     position: relative;
     margin:2px;
-    margin-bottom: 100px;
+    margin-bottom: 310px;
 }
 
 .about-containers{
@@ -351,7 +352,7 @@ section{
 
 .text-container {
     margin-top: 10px; /* Decrease this value to reduce the gap */
-    padding: 0;
+    margin-bottom: 20px;
     padding: 1.5rem;
     background: white;
     border-radius: 2rem;
@@ -373,9 +374,9 @@ section{
 #brain_tumor {
     padding: 2rem;
     background-color: #f0f0f0; /* Adjust this to match your website's background */
-    height: 100%;
-    width: 70%;
-    margin-left: 240px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .section-header {
@@ -386,31 +387,33 @@ section{
 }
 
 h2 {
-    font-size: 2rem;
-    color: #333; /* Adjust this to match your website's text color */
+    font-size: 3rem;
+    color: #000000; /* Adjust this to match your website's text color */
 }
 
 h3, h4 {
-    color: #333;
+    color: #000000;
     margin-top: 1rem;
 }
 
 .try-now-btn {
-    background-color: #ffffff;
-    color: #333;
+    height: 4rem;
+    background-color: #000000;
+    color: #ffffff;
     border: none;
-    border-radius: 20px;
+    border-radius: 40px;
     padding: 0.5rem 1rem;
-    font-size: 1rem;
+    font-size: 2rem;
     cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    transition: background-color 0.5s, box-shadow 0.5s;
     display: flex;
     align-items: center;
     text-decoration: none;
 }
 
 .try-now-btn:hover {
-    background-color: #f8f8f8;
+    background-color: white;
+    color: #000000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
