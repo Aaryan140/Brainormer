@@ -58,6 +58,8 @@ def detect_and_plot(image, model):
     return buf, detected_class
 
 # Function to get response from Gemini model
+
+# Function to autogenerate based on what type of tumor
 def get_gemini_response(tumor_type):
     model = genai.GenerativeModel("gemini-pro")
     prompt = f"""Provide a brief overview of the {tumor_type} brain tumor. Include the following information:
@@ -70,7 +72,7 @@ def get_gemini_response(tumor_type):
     response = model.generate_content(prompt)
     return response.text.strip()
 
-# Function to handle user queries
+# Function to handle user queries using gemini api
 def get_gemini_response_for_query(user_query):
     model = genai.GenerativeModel("gemini-pro")
     prompt = f"{user_query}"
@@ -97,7 +99,7 @@ if uploaded_image is not None:
     image_np = np.array(image)
     
     # Load the YOLO model
-    model_path = 'BRAIN_TUMOR_DETECTOR_model.pt'  # Update this path to your model
+    model_path = "BRAIN_TUMOR_DETECTOR_model.pt"  # Update this path to your model
     model = load_model(model_path)
     
     if model is not None:
