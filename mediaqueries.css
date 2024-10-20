@@ -1,0 +1,162 @@
+/* Larger screens */
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: auto;
+        margin-bottom: 4rem;
+    }
+    .about-containers {
+        flex-wrap: wrap;
+    }
+}
+
+/* Tablet and smaller desktops */
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+    #profile, .section-container {
+        display: block;
+    }
+    .arrow {
+        display: none;
+    }
+    section, .section-container {
+        height: auto;
+        margin: 0 5%;
+    }
+    .section__pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+    .about-containers {
+        margin-top: 0;
+    }
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .video-homepage, .about-details-container {
+        max-width: 100%;
+    }
+    #brain_tumor {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    nav {
+        height: auto;
+        padding: 1rem 0;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    #contact, footer {
+        height: auto;
+        padding: 2rem 0;
+    }
+    #profile {
+        height: auto;
+        margin-bottom: 2rem;
+        gap: 2rem;
+    }
+    .section__pic-container {
+        width: 200px;
+        height: 200px;
+    }
+    .brain-tumor-content {
+        flex-direction: column;
+    }
+    .brain-tumor-info, .brain-tumor-main {
+        width: 100%;
+    }
+    .contact-info-upper-container {
+        flex-direction: column;
+    }
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn {
+        width: 80%;
+        max-width: 250px;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .section__text__p2 {
+        font-size: 1.25rem;
+    }
+    .text-container {
+        padding: 1rem;
+    }
+    #brain_tumor {
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+    .try-now-btn {
+        font-size: 1.5rem;
+        height: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+    #hamburger-nav .logo {
+        font-size: 1rem;
+    }
+    .nav-links li a {
+        font-size: 0.9rem;
+    }
+    .section__pic-container {
+        width: 150px;
+        height: 150px;
+    }
+    .title {
+        font-size: 1.75rem;
+    }
+    .section__text__p2 {
+        font-size: 1rem;
+    }
+    .contact-info-container p {
+        font-size: 0.9rem;
+    }
+    .btn {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+    .try-now-btn {
+        font-size: 1.2rem;
+        height: 2.5rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    .details-container {
+        padding: 1rem;
+    }
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+    #about {
+        margin-bottom: 150px;
+    }
+}

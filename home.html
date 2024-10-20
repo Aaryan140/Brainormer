@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainormer | Revolutionizing Healthcare with AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav id="desktop-nav">
+        <div class="logo">Brainormer</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#brain_tumor">Brain Tumor</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            Brainormer |  Revolutionizing Healthcare with AI
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()"">About</a></li>
+                <li><a href="#brain_tumor" onclick="toggleMenu()"">Brain Tumor</a></li>
+                <li><a href="#contact" onclick="toggleMenu()"">Contact Us</a></li>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="homepage_pics\homelogo.jpg" alt="Brainormer logo">
+        </div>
+        <div class="section_text">
+            <p class="section__text__p1">Welcome to</p>
+            <h1 class="title">Brainormer</h1>
+            <p class="section__text__p2">Revolutionizing Healthcare with AI</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="location.href='#about'">
+                    Learn More
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">
+                    Contact Us
+                </button>
+            </div>
+            <!-- <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon" onclick="location.href='#'"/>
+                <img src="./assets/github.png" alt="Github Profile" class="icon" onclick="location.href='#'"/>
+            </div> -->
+        </div>
+    </section>
+
+    
+    <!-- About Us Section -->
+    <section id="about">
+        <p class="section__text__p1">Learn More</p>
+        <h1 class="title">About Brainormer</h1>
+        <div class="about-section section-container">
+            <div class="video-homepage">
+                <video id="video-homepage"  autoplay loop muted>
+                    <source src="home_page_vid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="homepage_pics\aboutuspic1.jpg" alt="AI icon" class="icon"/>
+                        <h3>AI-Powered</h3>
+                        <p>Leveraging cutting-edge AI and ML technologies</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="homepage_pics\aboutuspic2.jpg" alt="Healthcare icon" class="icon"/>
+                        <h3>Healthcare Focus</h3>
+                        <p>Revolutionizing medical diagnosis and research</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>At Brainormer, we are dedicated to transforming the healthcare industry through the power of Artificial Intelligence (AI) and Machine Learning (ML). Our mission is to bridge the gap between medical and engineering fields by developing innovative AI-driven solutions that enhance diagnostic accuracy and improve patient outcomes.</p>
+                <p>Our platform offers a seamless integration of cutting-edge technology and healthcare expertise. We provide advanced AI models designed to detect critical medical conditions like brain tumors using MRI image and bone fractures using X-Ray image (upcoming). Additionally, our IBM Watson-powered chatbot delivers reliable and instant responses to medical inquiries, fostering a deeper understanding of AI’s role in modern healthcare.</p>
+                <p>Brainormer is more than just a tool it’s a learning platform for medical students, researchers, and healthcare professionals. We aim to empower them with the knowledge and resources needed to explore the future of AI in medicine. By offering interactive tools, intuitive interfaces, and educational content, we help promote AI's potential in saving lives and revolutionizing diagnostics.</p>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- Brain Tumor Section -->
+    <section id="brain_tumor">
+        <div class="section-header">
+            <h2>Brain Tumor</h2>
+            <a href="https://brain-tumor-detector-brainormer.streamlit.app/" target="_blank" class="try-now-btn">Try it now <span class="barrow">↗</span></a>
+        </div>
+        <div class="brain-tumor-content">
+            <div class="brain-tumor-info">
+                <h3>What is a Brain Tumor?</h3>
+                <p>A brain tumor is an abnormal growth of cells within the brain. Some tumors are benign (non-cancerous), while others can be malignant (cancerous). Early detection and treatment are crucial for better outcomes.</p>
+                <h4>Common Types of Brain Tumors:</h4>
+                <ol>
+                    <li>
+                        <strong>Gliomas</strong>
+                        <p>Gliomas originate from glial cells, which support and protect neurons in the brain. They can be fast-growing and affect brain function, depending on their size and location. Gliomas are one of the most common types of brain tumors.</p>
+                    </li>
+                    <li>
+                        <strong>Meningiomas</strong>
+                        <p>Meningiomas form in the meninges, the protective membranes surrounding the brain and spinal cord. These tumors are usually benign and slow-growing, but their size and location can cause neurological problems.</p>
+                    </li>
+                    <li>
+                        <strong>Pituitary Tumors</strong>
+                        <p>Pituitary tumors develop in the pituitary gland, which regulates vital hormones. Most pituitary tumors are benign but can disrupt hormonal balance, leading to various health issues.</p>
+                    </li>
+                </ol>
+            </div>
+            <div class="brain-tumor-main">
+                <div class="brain-tumor-text">
+                    <p>Our Brain Tumor detection system uses cutting-edge AI models to classify and detect brain tumors from MRI scans. By leveraging technologies such as YOLO and deep learning, this system can assist medical professionals in early diagnosis and precise treatment planning.</p>
+                    <p>The AI model categorizes tumors into Glioma & Meningioma, assisting healthcare providers to analyze and use in their decision-making process.</p>
+                </div>
+                <div class="brain_tumor_image">
+                    <img src="homepage_pics\homepage_mri_scan.jpeg" alt="Brain Tumor Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Us</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="homepage_pics\contact_mail_logo.jpg" 
+                alt="Email icon" class="icon contact-icon email-icon"/>
+                <p><a href="mailto:asda.brainormer@gmail.com">asda.brainormer@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="homepage_pics\linkedin_logo.png" 
+                alt="LinkedIn icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/in/aryan-tanwar-635566213/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#brain_tumor">Brain Tumor</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Brainormer : Revolutionizing Healthcare with AI</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
