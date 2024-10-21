@@ -38,6 +38,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 17vh;
+    padding: 1rem 1.5rem; /* General padding for all views */
 }
 
 .nav-links{
@@ -67,6 +68,7 @@ a:hover{
 
 #hamburger-nav{
     display:none;
+    padding: 1rem 1.5rem; /* Adjust for smaller screens */
 }
 .hamburger-menu{
     position: relative;
